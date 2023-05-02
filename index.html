@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>API Digimon</title>
+    <!-- Audio de fondo -->
+    <audio autoplay>
+        <source src="assets/audio/digimon_adventure.mp3" type="audio/mp3">
+    </audio>
+    <!-- Animación del body, cambio de colores del background -->
+</head>
+<body>  
+<nav class="navbar navbar-expand-lg" style="background: rgba(255, 255, 255, 0.95);">
+    <div class="container-fluid">
+        <span class="navbar-text text-center font-monospace">
+            API Digimon |
+        </span>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active font-monospace" href="https://digimon.net" target="_blank">Digimon Oficial</a>    
+        </li>
+    </ul>       
+    </div>   
+</nav>
+<br>
+<br> 
+<!-- carta contenedora de la información      -->
+<div class="container-fluid row justify-content-md-center">
+    <div class="card text-dark border-dark mb-3" style="max-width: 18rem; background: whitesmoke;">
+        <div class="card-header font-monospace">Digimon</div>
+        <div class="card-body">
+            <h5 class="card-text text-center font-monospace">Seleccione de la lista un Digimon</h5><br>
+            <select class="form-select feedback font-monospace" id="digimon-select">
+                <option selected>Selecciona un digimon</option>
+            </select><br>
+            <img class="card-img-top" id="digimon-img" src="" onmousemove="mostrarMensaje(event)" onmouseout="ocultarMensaje()" width="100" height="200"><br>
+            <div id="mensaje"></div>
+            <h5 class="card-title font-monospace" id="digimon-name"></h5>
+            <p class="card-text font-monospace" id="digimon-level"></p>            
+        </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha512-kyHcO+L1gJrZmr9X1Kv+NU6aPYM5m5z5ayQV6eK9X1Iih7+EOb70bJG5f5E5MF5QgPRPZa23deZzMIeqTV9K4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+<script src="./assets/js/logica.js"></script>  
+<script src="https://www.youtube.com/iframe_api"></script>
+<script scr="https://cdn.rawgit.com/labnol/files/master/yt.js"></script> 
+</body>
+</html>
+
+

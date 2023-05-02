@@ -1,0 +1,16 @@
+/* Estilo para el mensaje del evento */
+#mensaje {
+  background-color: #1E90FF;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+/* Estilo para el body */
+body{
+  background: url("../img/digimon_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
